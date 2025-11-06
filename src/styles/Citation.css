@@ -1,0 +1,57 @@
+:root {
+  --color-bg: #2B3235;
+  --color-fond: #F4EBD0;
+  --color-text: #747066;
+  --color-primary: #F4CA96;
+  --color-secondary: #DDBE94;
+  --color-dark-accent: #554B41;
+  --color-hover-primary: #ddb778;
+  --color-hover-secondary: #c6a97b;
+  --color-hover-text: #f4ca96;
+  --color-bg-hover: #3a4043;
+}
+
+.home-container {
+  position: relative;
+  height: 100vh;
+  background-image: url('/src/img/Mountain-sunrise.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
+  z-index: 0;
+}
+
+.home-container {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 25vh;
+}
+
+.citation {
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .citation {
+    text-align: center;
+    line-height: 2;
+    font-size: 1.8em;
+  }
+
+  .home-container {
+    padding-top: 33vh;
+  }
+}

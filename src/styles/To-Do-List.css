@@ -1,0 +1,172 @@
+:root {
+  --color-bg: #2B3235;
+  --color-fond: #F4EBD0;
+  --color-text: #747066;
+  --color-primary: #F4CA96;
+  --color-secondary: #DDBE94;
+  --color-dark-accent: #554B41;
+  --color-hover-primary: #ddb778;
+  --color-hover-secondary: #c6a97b;
+  --color-hover-text: #f4ca96;
+  --color-bg-hover: #3a4043;
+}
+
+body {
+    background-color: var(--color-fond) !important;
+}
+
+.toDoList-container {
+    display: block;
+    align-items: center;
+    margin-top: 15px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 3vh !important;
+    text-align: center;
+    color: #747066;
+    background: #C6A97B;
+    background: linear-gradient(180deg, rgba(198, 169, 123, 1) 31%, rgba(221, 183, 120, 1) 58%, rgba(58, 64, 67, 1) 86%);
+    width: 35%;
+    border-radius: 12px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.to-do-Title {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 30px;
+    color: var(--color-text);
+}
+
+.date {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    color: var(--color-text);
+}
+
+input {
+    width: 45%;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    outline: none;
+}
+
+.submitBtn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    background-color: var(--color-primary);
+    color: var(--color-dark-accent);
+}
+
+.submitBtn:hover {
+    background-color: #c6a97b;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+li {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteBtn {
+    color: white;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+    align-items: flex-start;
+
+}
+
+.taskarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    line-height: 1.4;
+    color: white;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: inherit;
+    transition: all 0.30s ease-in-out;
+}
+
+.taskarea:focus{
+    box-shadow: 0 0 5px white;
+}
+
+.edit-controller {
+    display: flex;
+    gap: 5px;
+}
+
+.editBtn {
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--color-secondary);
+}
+
+.editBtn:hover {
+    color: var(--color-hover-secondary);
+}
+
+.saveBtn {
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+.cancelBtn {
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--color-secondary);
+}
+
+.cancelBtn:hover {
+    color: var(--color-hover-secondary);
+}
+
+@media (max-width: 768px) {
+    .toDoList-container{
+        width: 100%;
+        position: inherit;
+    }
+
+    input {
+        width: 200px;
+    }
+}

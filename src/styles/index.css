@@ -1,0 +1,19 @@
+:root {
+  --color-bg: #2B3235;
+  --color-text: #747066;
+  --color-primary: #F4CA96;
+  --color-secondary: #DDBE94;
+  --color-dark-accent: #554B41;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text); 
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
